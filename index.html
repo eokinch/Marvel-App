@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Attributes
+	loading page background image: http://www.havocpoint.it/2016/03/civil-war-ii-lartista-coreano-kim-jung-gi-realizza-la-variant/ -->
+	<meta charset="UTF-8">
+	<title>So You Think You're A Marvel Fan?</title>
+	<link rel="stylesheet" href="public/styles/style.css">
+</head>
+<body>
+	<main>
+		<section class="welcome hide-on-submit">
+			<div class="wrapper welcome-content">
+				<h1>So You Think <span>You're A Marvel Fan?</span></h1>
+				<div class="welcome-content_instructions">
+					<p>When you begin you will be given 3 random marvel characters. </p>
+					<p>You'll have 9 guesses to get them all.</p>
+					<p>Hints:</p>
+					<ul>
+						<li>Initials are for their real name (SR = Steve Rogers = Captain America) <span>(not all characters have a superhero name)</span></li>
+						<li>If you think they are a doctor try Dr. (Dr. Strange)</li>
+						<li>there may be a - in there name (ant-man)</li>
+					</ul>
+					<p>Please Enter Your Name To Begin</p>
+					<label for="player-name" class="SRT">Your Name Here</label>
+					<input type="text" placeholder="Your Name Here..." name="player-name" class="player-name" required>
+					<button class="start-game-submit">Let's Play</button>
+				</div>
+			</div>
+		</section>
+		<section class="game-play hide-on-load">
+			<div class="comic-backgroud-images">
+				<div class="comic-background image-1"></div>
+				<div class="comic-background image-2"></div>
+				<div class="comic-background image-3"></div>
+				<div class="comic-background image-3"></div>
+				<div class="comic-background image-2"></div>
+				<div class="comic-background image-1"></div>
+			</div>
+			<div class="wrapper game-play-contnet">
+				<h1>So You Think You're A Marvel Fan?</h1>
+				<h2>Who Are These 3 Characters</h2>
+				<p class="guess-count">You have <span></span> guesses left.</p>
+				<div class="chosen-characters">
+					
+				</div>
+			</div>
+		</section>
+		<section class="winner hide-until-won">
+			<h2>You Win</h2>
+			<p>you did it with <span></span> guesses left</p>
+			<div class="leaderBoard">
+				<h3>Here are the top winners:</h3>
+			</div>
+			<a href="index.html">Click Here To PLay Again</a>
+		</section>
+		<section class="loser hide-until-lost">
+			<h2>You Lost</h2>
+			<div class="leaderBoard">
+				<h3>Here are some people who didn't:</h3>
+
+			</div>
+			<a href="index.html">Click Here To try Again</a>
+		</section>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="public/scripts/main.js"></script>
+	
+</body>
+</html>

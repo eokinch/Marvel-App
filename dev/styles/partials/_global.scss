@@ -1,0 +1,27 @@
+.wrapper {
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+.SRT {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+    position: absolute !important;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+h1, h2 {
+	text-align: center;
+	margin: 0;
+}
+
+.hide-on-load, .hide-until-won, .hide-until-lost {
+    display: none;
+}
+
+.welcome-content h1, .welcome-content_instructions, .winner, .loser {
+    border: 5px solid #ddddd9;
+} 

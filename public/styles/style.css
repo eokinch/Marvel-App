@@ -1,0 +1,296 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.wrapper {
+  max-width: 85%;
+  margin: 0 auto; }
+
+.SRT {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+          clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
+h1, h2 {
+  text-align: center;
+  margin: 0; }
+
+.hide-on-load, .hide-until-won, .hide-until-lost {
+  display: none; }
+
+.welcome-content h1, .welcome-content_instructions, .winner, .loser {
+  border: 5px solid #ddddd9; }
+
+.welcome {
+  height: 100vh;
+  background: url(../../assets/on-load-bg.jpg);
+  background-size: cover;
+  background-position-y: -30px;
+  position: relative; }
+
+.welcome-content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase; }
+
+.welcome-content h1 {
+  background: #f0141e;
+  padding: 40px 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  -webkit-box-shadow: inset 0 0 30px #000;
+  box-shadow: inset 0 0 30px #000;
+  text-shadow: 3px 0px 4px #000;
+  font-size: 50px; }
+  .welcome-content h1 span {
+    display: block; }
+
+.welcome-content_instructions {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px; }
+  .welcome-content_instructions ul li span {
+    display: block; }
+  .welcome-content_instructions input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #f0141e;
+    width: 60%;
+    padding: 10px 20px 10px 10px;
+    color: white;
+    text-transform: uppercase; }
+    .welcome-content_instructions input::-webkit-input-placeholder {
+      text-transform: uppercase;
+      color: white; }
+    .welcome-content_instructions input:-ms-input-placeholder {
+      text-transform: uppercase;
+      color: white; }
+    .welcome-content_instructions input::placeholder {
+      text-transform: uppercase;
+      color: white; }
+  .welcome-content_instructions button {
+    border: none;
+    background: none;
+    color: #f0141e;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-weight: bold; }
+    .welcome-content_instructions button:hover {
+      color: white;
+      text-shadow: 3px 0px 4px #f0141e; }
+
+.game-play {
+  position: relative; }
+  .game-play .guess-count {
+    text-align: center; }
+    .game-play .guess-count span {
+      font-weight: bold; }
+
+.comic-backgroud-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative; }
+
+.comic-background {
+  width: 33.33%;
+  height: 50vh;
+  background-size: cover; }
+
+.game-play-contnet {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  padding: 30px; }
+
+.chosen-characters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.character-card {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  border: 1px solid black;
+  min-height: 30vh; }
+
+.guessed-character {
+  text-align: center; }
+  .guessed-character img {
+    max-width: 100%;
+    padding: 0 20px; }
+
+.winner, .loser {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 40px 20px;
+  color: white;
+  text-transform: uppercase; }
+  .winner a, .loser a {
+    color: white;
+    text-decoration: none; }
+
+.winner {
+  background: #f0141e; }
+
+.loser {
+  background: #326897; }
