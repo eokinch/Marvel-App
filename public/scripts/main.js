@@ -9,231 +9,231 @@ var app = {};
 app.characters = [{
 	id: 1009515,
 	name: 'Punisher',
-	facts: [['My Height is: 6\'1'], ['I am Male'], ['Superpowers: None'], ['My Intials are: FC'], ['First Appearance: Amazing Spider-Man #129 (1974)'], ['Group Affiliations: None']],
+	facts: [['My "costume" icludes a skull'], ['I Was Originally A Spider-Man Villan'], ['Superpowers: None'], ['My Intials are: FC'], ['First Appearance: Amazing Spider-Man #129 (1974)'], ['Group Affiliations: None']],
 	first: 6515
 
 }, {
 	id: 1009220,
 	name: 'Captian America',
-	facts: [['My Height is: 6\'2'], ['I am Male'], ['Superpowers: Enhanced strength, endurance, agility, speed and reflexes'], ['My Initals are: SR'], ['First Appearance: Captain America Comics #1 (1941)'], ['Group Affiliations: The Avengers']],
+	facts: [['I Love Stars and Stripes'], ['My Best Friend is: Bucky Barnes'], ['Superpowers: Enhanced strength, endurance, agility, speed and reflexes'], ['My Initals are: SR'], ['First Appearance: Captain America Comics #1 (1941)'], ['Group Affiliations: The Avengers']],
 	first: 7849
 }, {
 	id: 1009338,
 	name: 'Hawkeye',
-	facts: [['My Height is: 6\'3'], ['I am Male'], ['Superpowers: none'], ['My Initals are: CB'], ['First Appearance: Tales of Suspense #57 (1964)'], ['Group Affiliations: The Avengers']],
+	facts: [['I was a part of the Carson Carnival of Travelling Wonders'], ['I\'m good with a bow and arrow'], ['Superpowers: none'], ['My Initals are: CB'], ['First Appearance: Tales of Suspense #57 (1964)'], ['Group Affiliations: The Avengers']],
 	first: 11300
 }, {
 	id: 1009368,
 	name: 'Iron Man',
-	facts: [['My Height is: 6\'1, 6\'6 suited up'], ['I am Male'], ['Superpowers: none, gains super powers from costume'], ['My Initals are: TS'], ['First Appearance: Tales of Suspense #39 (1963)'], ['Group Affiliations: The Avengers']],
+	facts: [['I\'m loosely based on Howard Hughes'], ['I own Area 51'], ['Superpowers: none, gains super powers from costume'], ['My Initals are: TS'], ['First Appearance: Tales of Suspense #39 (1963)'], ['Group Affiliations: The Avengers']],
 	first: 11280
 }, {
 	id: 1009351,
 	name: 'Hulk',
-	facts: [['My Height is: 5\'9 to 8\''], ['I am Male'], ['Superpowers: Superhuman strength'], ['My Initals are: BB'], ['First Appearance: Incredible Hulk #1 (1962)'], ['Group Affiliations: The Avengers']],
+	facts: [['You don\'t want to see me angry'], ['I am a atomic physicist'], ['Superpowers: Superhuman strength'], ['My Initals are: BB'], ['First Appearance: Incredible Hulk #1 (1962)'], ['Group Affiliations: The Avengers']],
 	first: 8906
 }, {
 	id: 1009610,
 	name: 'Spider-Man',
-	facts: [['My Height is: 5\'10'], ['I am Male'], ['Superpowers: Superhuman strength, speed, reflexes, durability, stamina, healing and agility,'], ['My Initals are: PP'], ['First Appearance: Amazing Fantasy #15 (1962)'], ['Group Affiliations: The Avengers']],
+	facts: [['My parents were part of S.H.I.E.L.D'], ['I gained my powers when I was 15 years old'], ['Superpowers: Superhuman strength, speed, reflexes, durability, stamina, healing and agility,'], ['My Initals are: PP'], ['First Appearance: Amazing Fantasy #15 (1962)'], ['Group Affiliations: The Avengers']],
 	first: 16926
 }, {
 	id: 1009664,
 	name: 'Thor',
-	facts: [['My Height is: 6\'6'], ['I am Male'], ['Superpowers: Godly Stregth and Abilities, Can summon lightning'], ['My Initals are: TO'], ['First Appearance: Journey into Mystery #83 (1962)'], ['Group Affiliations: The Avengers']],
+	facts: [['I take Mj\xF6lnir to every fight'], ['I have a day in the week named after me'], ['Superpowers: Godly Stregth and Abilities, Can summon lightning'], ['My Initals are: TO'], ['First Appearance: Journey into Mystery #83 (1962)'], ['Group Affiliations: The Avengers']],
 	first: 9779
 }, {
 	id: 1009562,
 	name: 'Scarlet Witch',
-	facts: [['My Height is: 5\'7'], ['I am Female'], ['Superpowers: Warps Reality with mystic energy'], ['My Initals are: WM'], ['First Appearance: X-Men #4 (1964)'], ['Group Affiliations: The Avengers']],
+	facts: [['My father is Magneto'], ['I have a twin brother'], ['Superpowers: Warps Reality with mystic energy'], ['My Initals are: WM'], ['First Appearance: X-Men #4 (1964)'], ['Group Affiliations: The Avengers']],
 	first: 12488
 }, {
 	id: 1009718,
 	name: 'Wolverine',
-	facts: [['My Height is: 5\'3'], ['I am Male'], ['Superpowers: animal-keen senses, powerful regenerative ability, and three retractable claws in each hand. '], ['My Initals are: JH'], ['First Appearance: Incredible Hulk #180 (1974)'], ['Group Affiliations: X-Men']],
+	facts: [['I was born in the 1880s'], ['I fought Spock... and lost'], ['Superpowers: animal-keen senses, powerful regenerative ability, and three retractable claws in each hand. '], ['My Initals are: JH'], ['First Appearance: Incredible Hulk #180 (1974)'], ['Group Affiliations: X-Men']],
 	first: 8991
 }, {
 	id: 1009697,
 	name: 'Vision',
-	facts: [['My Height is: 5\'3'], ['I am a android'], ['Superpowers: superhuman senses, stamina, reflexes, speed, agility, strength and analytical capabilities'], ['My Inital is: V'], ['First Appearance: Marvel Mystery Comics #13 (1940)'], ['Group Affiliations: Avengers']],
+	facts: [['I was made by Ultron'], ['I am a android'], ['Superpowers: superhuman senses, stamina, reflexes, speed, agility, strength and analytical capabilities'], ['My Inital is: V'], ['First Appearance: Marvel Mystery Comics #13 (1940)'], ['Group Affiliations: Avengers']],
 	first: 16718
 }, {
 	id: 1010801,
 	name: 'Ant-Man',
-	facts: [['My Height is: 6\''], ['I am male'], ['Superpowers: Size Alteration'], ['My Initals are: SL'], ['First Appearance: Avengers, Vol. 1 #181 (1979)'], ['Group Affiliations: Avengers']],
+	facts: [['I can hop through dimensions'], ['I have a daughter, who will become a superhero'], ['Superpowers: Size Alteration'], ['My Initals are: SL'], ['First Appearance: Avengers, Vol. 1 #181 (1979)'], ['Group Affiliations: Avengers']],
 	first: 7043
 }, {
 	id: 1009175,
 	name: 'Beast',
-	facts: [['My Height is: 5\'11'], ['I am male'], ['Superpowers: superhuman strength, agility, endurance, and speed, despite his bulk.'], ['My Initals are: HPM'], ['First Appearance: X-Men #1 (1963)'], ['Group Affiliations: X-Men']],
+	facts: [['I was kidnaped by the Conquistador'], ['I am a geneticist'], ['Superpowers: superhuman strength, agility, endurance, and speed, despite his bulk.'], ['My Initals are: HPM'], ['First Appearance: X-Men #1 (1963)'], ['Group Affiliations: X-Men']],
 	first: 12413
 }, {
 	id: 1009215,
 	name: 'Luke Cage',
-	facts: [['My Height is: 6\'6'], ['I am male'], ['Superpowers: superhuman strength and steel-hard skin'], ['My Initals are: LC'], ['First Appearance: Hero for Hire #1 (1972)'], ['Group Affiliations: Defenders']],
+	facts: [['Iron Fist is my Best Friend'], ['I got my powers when Dr. Burstein failed to recreate Captain America\'s super soldier serum'], ['Superpowers: superhuman strength and steel-hard skin'], ['My Initals are: LC'], ['First Appearance: Hero for Hire #1 (1972)'], ['Group Affiliations: Defenders']],
 	first: 24116
 }, {
 	id: 1009187,
 	name: 'Black Panther',
-	facts: [['My Height is: 6\''], ['I am male'], ['Superpowers: superhuman senses and physical abilities'], ['My Initals are: T\'C'], ['First Appearance: Fantastic Four Vol. 1 #52 (1966)'], ['Group Affiliations: Fantastic Four']],
+	facts: [['I was the first black superhero in mainstream comics'], ['I was once married to Storm'], ['Superpowers: superhuman senses and physical abilities'], ['My Initals are: T\'C'], ['First Appearance: Fantastic Four Vol. 1 #52 (1966)'], ['Group Affiliations: Fantastic Four']],
 	first: 13258
 }, {
 	id: 1009262,
 	name: 'Daredevil',
-	facts: [['My Height is: 6\''], ['I am male'], ['Superpowers: Has 4 superhuman senses'], ['My Initals are: MM'], ['First Appearance: Daredevil #1 (1964)'], ['Group Affiliations: Defenders']],
+	facts: [['I was part of the inspiration for the Teenage Mutant Ninja Turtles'], ['My original costume was yellow'], ['Superpowers: Has 4 superhuman senses'], ['My Initals are: MM'], ['First Appearance: Daredevil #1 (1964)'], ['Group Affiliations: Defenders']],
 	first: 8073
 }, {
 	id: 1009367,
 	name: 'Iron Fist',
-	facts: [['My Height is: 5\'11'], ['I am male'], ['Superpowers: harnesses chi to increase physical and mental capabilities'], ['My Initals are: DR'], ['First Appearance: Marvel Premiere #15 (1974)'], ['Group Affiliations: Defenders']],
+	facts: [['I gained my powers defeating a dragon'], ['I am a orphan'], ['Superpowers: harnesses chi to increase physical and mental capabilities'], ['My Initals are: DR'], ['First Appearance: Marvel Premiere #15 (1974)'], ['Group Affiliations: Defenders']],
 	first: 10201
 }, {
 	id: 1009378,
 	name: 'Jessica Jones',
-	facts: [['My Height is: 5\'7'], ['I am female'], ['Superpowers:  Superhuman strength'], ['My Initals are: JJ'], ['First Appearance: Alias #1 (2001)'], ['Group Affiliations: Defenders']],
+	facts: [['My alias used to be Jewel'], ['I am the first female Marvel superhero to headline my own series in the MCU'], ['Superpowers:  Superhuman strength'], ['My Initals are: JJ'], ['First Appearance: Alias #1 (2001)'], ['Group Affiliations: Defenders']],
 	first: 32430
 }, {
 	id: 1009662,
 	name: 'Thing',
-	facts: [['My Height is: 6\''], ['I am male'], ['Superpowers:  superhuman strength and durability'], ['My Initals are: BG'], ['First Appearance: Fantastic Four #1 (1961)'], ['Group Affiliations: Fantastic Four']],
+	facts: [['"It\'s clobberin\' time!"'], ['Reed Richards is my closest friend'], ['Superpowers:  superhuman strength and durability'], ['My Initals are: BG'], ['First Appearance: Fantastic Four #1 (1961)'], ['Group Affiliations: Fantastic Four']],
 	first: 12894
 
 }, {
 	id: 1009707,
 	name: 'Wasp',
-	facts: [['My Height is: 5\'4'], ['I am female'], ['Superpowers: Flight and Size Reduction'], ['My Initals are: JD'], ['First Appearance: Tales to Astonish #44'], ['Group Affiliations: Avengers']],
+	facts: [['I used to by a Fashion Designer and TV host'], ['I was married to Hank Pym'], ['Superpowers: Flight and Size Reduction'], ['My Initals are: JvD'], ['First Appearance: Tales to Astonish #44'], ['Group Affiliations: Avengers']],
 	first: 11387
 }, {
 	id: 1010338,
 	name: 'Captain Marvel',
-	facts: [['My Height is: 5\'11'], ['I am female'], ['Superpowers: enhanced strength, durability and shoots energy bursts from hands'], ['My Initals are: CD'], ['First Appearance: Marvel Super-Heroes #13 (1967)'], ['Group Affiliations: Avengers']],
+	facts: [['I got my powers because of an explosion caused by ancient Kree technology'], ['I was a servicewoman in the U.S. Air Force'], ['Superpowers: enhanced strength, durability and shoots energy bursts from hands'], ['My Initals are: CD'], ['First Appearance: Marvel Super-Heroes #13 (1967)'], ['Group Affiliations: Avengers']],
 	first: 15424
 }, (_ref = {
 	id: 1009189,
 	name: 'Black Widow'
-}, _defineProperty(_ref, 'name', 'Captain Marvel'), _defineProperty(_ref, 'facts', [['My Height is: 5\'7'], ['I am female'], ['Superpowers: world class athlete, gymnast, acrobat, aerialist, advanced healing capabilities and resistant to aging'], ['My Initals are: NR'], ['First Appearance: Tales of Suspense #52 (1964)'], ['Group Affiliations: Avengers']]), _defineProperty(_ref, 'first', 11295), _ref), {
+}, _defineProperty(_ref, 'name', 'Captain Marvel'), _defineProperty(_ref, 'facts', [['I was married to a Soviet Spy'], ['I was born in 1928'], ['Superpowers: world class athlete, gymnast, acrobat, aerialist, advanced healing capabilities and resistant to aging'], ['My Initals are: NR'], ['First Appearance: Tales of Suspense #52 (1964)'], ['Group Affiliations: Avengers']]), _defineProperty(_ref, 'first', 11295), _ref), {
 	id: 1009356,
 	name: 'Human Torch',
-	facts: [['My Height is: 5\'10'], ['I am male'], ['Superpowers: can cover body in fire, project fireballs or other fire objects and flying at supersonic speeds'], ['My Initals are: JS'], ['First Appearance: Fantastic Four #1 (1961)'], ['Group Affiliations: Fantastic Four']],
+	facts: [['Invisible Woman is my sister'], ['I gained my mutation from cosmic rays'], ['Superpowers: can cover body in fire, project fireballs or other fire objects and flying at supersonic speeds'], ['My Initals are: JS'], ['First Appearance: Fantastic Four #1 (1961)'], ['Group Affiliations: Fantastic Four']],
 	first: 12894
 }, {
 	id: 1009343,
 	name: 'Hercules',
-	facts: [['My Height is: 6\'5'], ['I am male'], ['Superpowers: superhuman strength'], ['My Inital is: H'], ['First Appearance: THOR ANNUAL #1'], ['Group Affiliations: Olympians']],
+	facts: [['My father is Zeus'], ['I am from Greece'], ['Superpowers: superhuman strength'], ['My Inital is: H'], ['First Appearance: THOR ANNUAL #1'], ['Group Affiliations: Gods of Olympus']],
 	first: 52822
 }, {
 	id: 1009629,
 	name: 'Storm',
-	facts: [['My Height is: 5\'11'], ['I am female'], ['Superpowers: possesses the psionic ability to manipulate weather patterns'], ['My Initals are: OM'], ['First Appearance: Giant-Size X-Men #1 (1975)'], ['Group Affiliations: x-men']],
+	facts: [['I began life as an Egyptian Thief'], ['I am the first black female in mainstream comics'], ['Superpowers: possesses the psionic ability to manipulate weather patterns'], ['My Initals are: OM'], ['First Appearance: Giant-Size X-Men #1 (1975)'], ['Group Affiliations: x-men']],
 	first: 8797
 }, {
 	id: 1009268,
 	name: 'Deadpool',
-	facts: [['My Height is: 6\'2'], ['I am male'], ['Superpowers: extraordinary hand-to-hand combatant'], ['My Initals are: WW'], ['First Appearance: New Mutants #98 (1990)'], ['Group Affiliations: x-force']],
+	facts: [['My real name is a joke and a play off of a DC character'], ['I break the 4th wall all the time'], ['Superpowers: extraordinary hand-to-hand combatant'], ['My Initals are: WW'], ['First Appearance: New Mutants #98 (1990)'], ['Group Affiliations: x-force']],
 	first: 10441
 }, {
 	id: 1009417,
 	name: 'Magneto',
-	facts: [['My Height is: 6\'2'], ['I am male'], ['Superpowers: controls all forms of magnetism'], ['My Initals are: ME'], ['First Appearance: X-Men #1 (1963)'], ['Group Affiliations: x-men']],
+	facts: [['I have 3 children who are also superheros'], ['As a child I was sent to Auschwitz'], ['Superpowers: controls all forms of magnetism'], ['My Initals are: ME'], ['First Appearance: X-Men #1 (1963)'], ['Group Affiliations: x-men']],
 	first: 12413
 }, {
 	id: 1009504,
 	name: 'Professor X',
-	facts: [['My Height is: 6\''], ['I am male'], ['Superpowers: has vast psionic powers'], ['My Initals are: CFX'], ['First Appearance: X-Men #1 (1963)'], ['Group Affiliations: x-men']],
+	facts: [['I run a school'], ['Red Skull once stole my brain'], ['Superpowers: has vast psionic powers'], ['My Initals are: CFX'], ['First Appearance: X-Men #1 (1963)'], ['Group Affiliations: x-men']],
 	first: 12413
 }, {
 	id: 1009282,
 	name: 'Dr. Strange',
-	facts: [['My Height is: 6\'2'], ['I am male'], ['Superpowers: one of the most powerful sorcerers in existence'], ['My Initals are: SS'], ['First Appearance: Strange Tales #110 (1963)'], ['Group Affiliations: Avengers']],
+	facts: [['I was a neurosurgeon before gaining my superpowers'], ['I mentored Scarlet Witch'], ['Superpowers: one of the most powerful sorcerers in existence'], ['My Initals are: SS'], ['First Appearance: Strange Tales #110 (1963)'], ['Group Affiliations: Avengers']],
 	first: 11029
 }, {
 	id: 1009297,
 	name: 'Falcon',
-	facts: [['My Height is: 6\'2'], ['I am male'], ['Superpowers: can telepathically communicate with his pet Redwing'], ['My Initals are: SW'], ['First Appearance: Captain America #117 (1969)'], ['Group Affiliations: Avengers']],
+	facts: [['I became Captain America in 2014'], ['I was the first African-American Superhero'], ['Superpowers: can telepathically communicate with his pet Redwing'], ['My Initals are: SW'], ['First Appearance: Captain America #117 (1969)'], ['Group Affiliations: Avengers']],
 	first: 7498
 }, {
 	id: 1009471,
 	name: 'Nick Fury',
-	facts: [['My Height is: 6\'1'], ['I am male'], ['Superpowers: ages very slowly'], ['My Initals are: NF'], ['First Appearance: Sgt. Fury and His Howling Commandos #1 (1963)'], ['Group Affiliations: S.H.I.E.L.D.']],
+	facts: [['I fought in World War 2 with Captain America and my Howling Commandos'], ['I am male'], ['Superpowers: ages very slowly'], ['My Initals are: NF'], ['First Appearance: Sgt. Fury and His Howling Commandos #1 (1963)'], ['Group Affiliations: S.H.I.E.L.D.']],
 	first: 10644
 }, {
 	id: 1010740,
 	name: 'Winter Soldier',
-	facts: [['My Height is: 5\'9'], ['I am male'], ['Superpowers: superhuman strength, speed, reflexes, healing, stamina, agility and semi-immortality'], ['My Initals are: JBB'], ['First Appearance: Captain America #1 (2004)'], ['Group Affiliations: HYDRA']],
+	facts: [['I am often kept in cryogenic stasis '], ['I once has a thing with Black Widow'], ['Superpowers: superhuman strength, speed, reflexes, healing, stamina, agility and semi-immortality'], ['My Initals are: JBB'], ['First Appearance: Captain America #1 (2004)'], ['Group Affiliations: HYDRA']],
 	first: 91
 }, {
 	id: 1009524,
 	name: 'Quicksilver',
-	facts: [['My Height is: 6\''], ['I am male'], ['Superpowers: possesses superhuman speed'], ['My Initals are: PM'], ['First Appearance: X-Men #4'], ['Group Affiliations: Avengers']],
+	facts: [['My father is Magneto'], ['I have a twin sister'], ['Superpowers: possesses superhuman speed'], ['My Initals are: PM'], ['First Appearance: X-Men #4'], ['Group Affiliations: Avengers']],
 	first: 12488
 }, {
 	id: 1009318,
 	name: 'Ghost Rider',
-	facts: [['My Height is: 5\'10'], ['I am male'], ['Superpowers: has superhuman strength and durability, as well as the ability to project and control Hellfire'], ['My Initals are: JB'], ['First Appearance: Marvel Spotlight #5 (1972)'], ['Group Affiliations: None']],
+	facts: [['I can regenerate my skull'], ['One of my aliases is: Spirit of Vengeance'], ['Superpowers: has superhuman strength and durability, as well as the ability to project and control Hellfire'], ['My Initals are: JB'], ['First Appearance: Marvel Spotlight #5 (1972)'], ['Group Affiliations: None']],
 	first: 10262
 }, {
 	id: 1009508,
 	name: 'Kitty Pride',
-	facts: [['My Height is: 5\'6'], ['I am female'], ['Superpowers: expertise of the martial arts of the Japanese ninja and samurai'], ['My Initals are: KP'], ['First Appearance: X-Men #129 (1980)'], ['Group Affiliations: X-men']],
+	facts: [['Storm gave me my first code name'], ['I was engaged to Star-Lord'], ['Superpowers: expertise of the martial arts of the Japanese ninja and samurai'], ['My Initals are: KP'], ['First Appearance: X-Men #129 (1980)'], ['Group Affiliations: X-men']],
 	first: 12446
 }, {
 	id: 1009366,
 	name: 'Invisible Woman',
-	facts: [['My Height is: 5\'6'], ['I am female'], ['Superpowers: can be wholly or partially invisible at will'], ['My Initals are: SR'], ['First Appearance: Fantastic Four #1 (1961)'], ['Group Affiliations: Fantastic Four']],
+	facts: [['My brother is Human Torch'], ['I gained my powers from cosmic rays'], ['Superpowers: can be wholly or partially invisible at will'], ['My Initals are: SR'], ['First Appearance: Fantastic Four #1 (1961)'], ['Group Affiliations: Fantastic Four']],
 	first: 12894
 }, {
 	id: 1009592,
 	name: 'Silver Surfer',
-	facts: [['My Height is: 6\'4'], ['I am male'], ['Superpowers: wields "the power cosmic"'], ['My Initals are: NR'], ['First Appearance: Fantastic Four #48 (1966)'], ['Group Affiliations: Defenders']],
+	facts: [['I am a citizen of 190 countries'], ['I can travel 500,000 light years in seconds'], ['Superpowers: wields "the power cosmic"'], ['My Initals are: NR'], ['First Appearance: Fantastic Four #48 (1966)'], ['Group Affiliations: Defenders']],
 	first: 13253
 }, {
 	id: 1009407,
 	name: 'Loki',
-	facts: [['My Height is: 6\'4'], ['I am male'], ['Superpowers: magical abilities include: shape-shifting, astral projection, molecular rearrangement, eldritch energy blasts, illusion casting, levitation, telepathy, hypnosis, and teleportation.'], ['My Initals are: LL'], ['First Appearance: Journey into Mystery #85 (1962)'], ['Group Affiliations: Asgardians']],
+	facts: [['When I made my debut I had red hair'], ['I am the son of Laufey and Farbauti'], ['Superpowers: magical abilities include: shape-shifting, astral projection, molecular rearrangement, eldritch energy blasts, illusion casting, levitation, telepathy, hypnosis, and teleportation.'], ['My Initals are: LL'], ['First Appearance: Journey into Mystery #85 (1962)'], ['Group Affiliations: Asgardians']],
 	first: 9781
 }, {
 	id: 1009327,
 	name: 'Jean Grey',
-	facts: [['My Height is: 5\'6'], ['I am female'], ['Superpowers: read minds, projects thoughts into the minds of others, initiate astral travel, and mentally stun opponents with pure psionic force.'], ['My Initals are: JGS'], ['First Appearance: X-Men #1 (1963)'], ['Group Affiliations: x-men']],
+	facts: [['I was originally called Marvel Girl'], ['After exposure to radiation I re-emerged as the Phoenix'], ['Superpowers: read minds, projects thoughts into the minds of others, initiate astral travel, and mentally stun opponents with pure psionic force.'], ['My Initals are: JGS'], ['First Appearance: X-Men #1 (1963)'], ['Group Affiliations: x-men']],
 	first: 12413
 }, {
 	id: 1009257,
 	name: 'Cyclops',
-	facts: [['My Height is: 6\'3'], ['I am male'], ['Superpowers: projects a beam of heatless ruby-colored concussive force from his eyes'], ['My Initals are: SS'], ['First Appearance: X-Men #1 (1963)'], ['Group Affiliations: x-men']],
+	facts: [['Cable is my son'], ['I am widely considered to be the first X-Man'], ['Superpowers: projects a beam of heatless ruby-colored concussive force from his eyes'], ['My Initals are: SS'], ['First Appearance: X-Men #1 (1963)'], ['Group Affiliations: x-men']],
 	first: 12413
 }, {
 	id: 1009472,
 	name: 'Nightcrawler',
-	facts: [['My Height is: 5\'9'], ['I am male'], ['Superpowers: teleportation'], ['My Initals are: KW'], ['First Appearance: Giant-Size X-Men #1 (1975)'], ['Group Affiliations: x-men']], first: 8797
+	facts: [['Mystique is my mother'], ['I was almost a DC character'], ['Superpowers: teleportation'], ['My Initals are: KW'], ['First Appearance: Giant-Size X-Men #1 (1975)'], ['Group Affiliations: x-men']], first: 8797
 }, {
 	id: 1009583,
 	name: 'She-Hulk',
-	facts: [['My Height is: 5\'10 to 6\'7'], ['I am female'], ['Superpowers: possesses great strength, durability, endurance and a healing factor'], ['My Initals are: JW'], ['First Appearance: Savage She-Hulk #1 (1980)'], ['Group Affiliations: Avengers']],
+	facts: [['I was the leader of the A-Force'], ['I have a law degree'], ['Superpowers: possesses great strength, durability, endurance and a healing factor'], ['My Initals are: JW'], ['First Appearance: Savage She-Hulk #1 (1980)'], ['Group Affiliations: Avengers']],
 	first: 15256
 }, {
 	id: 1010744,
 	name: 'Rocket',
-	facts: [['My Height is: 4\''], ['I am not human'], ['Superpowers: heightened sense of smell and sight'], ['My Initals are: RR'], ['First Appearance: Marvel Preview #7 (1976)'], ['Group Affiliations: Guardians of the Galaxy']],
+	facts: [['I am one of the few characters that can understand what Groot is saying'], ['I am not human'], ['Superpowers: heightened sense of smell and sight'], ['My Initals are: RR'], ['First Appearance: Marvel Preview #7 (1976)'], ['Group Affiliations: Guardians of the Galaxy']],
 	first: 19779
 }, {
 	id: 1010733,
 	name: 'Star-Lord',
-	facts: [['My Height is: 6\'2'], ['I am male'], ['Superpowers: none, gains super powers from costume'], ['My Initals are: PQ'], ['First Appearance: Marvel Preview #4 (1976)'], ['Group Affiliations: Guardians of the Galaxy']],
+	facts: [['I am half human, half alien'], ['I was engaged to Kitty Pride'], ['Superpowers: none, gains super powers from costume'], ['My Initals are: PQ'], ['First Appearance: Marvel Preview #4 (1976)'], ['Group Affiliations: Guardians of the Galaxy']],
 	first: 19776
 }, {
 	id: 1010743,
 	name: 'Groot',
-	facts: [['My Height is: variable'], ['I am not human'], ['Superpowers: power to regenerate and can communicate with plant life'], ['My Inital is: G'], ['First Appearance: Tales to Astonish #13 (1960)'], ['Group Affiliations: Guardians of the Galaxy']],
+	facts: [['I am from Planet X'], ['I am not human and the last of my kind'], ['Superpowers: power to regenerate and can communicate with plant life'], ['My Inital is: G'], ['First Appearance: Tales to Astonish #13 (1960)'], ['Group Affiliations: Guardians of the Galaxy']],
 	first: 11353
 }, {
 	id: 1009465,
 	name: 'Mystique',
-	facts: [['My Height is: 5\'10'], ['I am female'], ['Superpowers: can psionically shift the atoms of her body to duplicate any humanoid of either sex'], ['My Initals are: RD'], ['First Appearance: Ms Marvel #16 (1978)'], ['Group Affiliations: x-men']],
+	facts: [['I have a long running feud with Captain Marvel'], ['I am Nightcrawlers mother'], ['Superpowers: can psionically shift the atoms of her body to duplicate any humanoid of either sex'], ['My Initals are: RD'], ['First Appearance: Ms Marvel #16 (1978)'], ['Group Affiliations: x-men']],
 	first: 10294
 }, {
 	id: 1010763,
 	name: 'Gamora',
-	facts: [['My Height is: 6\''], ['I am female'], ['Superpowers: superhuman strength and agility and accelerated healing'], ['My Inital is: G'], ['First Appearance: Strange Tales #180'], ['Group Affiliations: Guardians of the Galaxy']],
+	facts: [['Most of my abilities are specialized cybernetic enhancements that Thanos designed'], ['I am the last of my species'], ['Superpowers: superhuman strength and agility and accelerated healing'], ['My Inital is: G'], ['First Appearance: Strange Tales #180'], ['Group Affiliations: Guardians of the Galaxy']],
 	first: 22132
 }];
 
