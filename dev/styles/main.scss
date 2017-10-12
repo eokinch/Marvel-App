@@ -41,29 +41,17 @@
 		display: block;
 	}
 	input {
-		background: none;
-		border: none;
-		border-bottom: 2px solid $marvel-red;
 		width: 60%;
-		padding: 10px 20px 10px 10px;
 		color: white;
-		text-transform: uppercase; 
+		padding: 10px 20px 10px 10px;
+		text-transform: uppercase;
 		&::placeholder {
-			text-transform: uppercase;
-			color: white;
-		}
+        	color: white;
+        	text-transform: uppercase;
+    	}
 	}
 	button {
-		border: none;
-		background: none;
-		color: $marvel-red;
-		text-transform: uppercase;
 		padding: 10px 15px;
-		font-weight: bold;
-		&:hover {
-			color: white;
-			text-shadow: 3px 0px 4px $marvel-red;
-		}
 	}
 }
 
@@ -86,13 +74,34 @@
 	height: 50vh;
 	background-size: cover;
 }
+.game-play_header {
+	margin: 10px;
+	padding: 20px;
+	color: white;
+	background: $marvel-red;
+	text-shadow: 3px 0px 4px #000;
+	h1 {
+	    margin-bottom: 10px;
+	    span {
+	        display: block;
+	    }
+	}
+	h2 {
+		margin-bottom: 5px;	
+	}
+	p {
+		margin: 0;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
 .game-play-contnet {
 	position: absolute;
 	width: 100%;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.8));
+	background: rgba(0,0,0,0.8)	;
 	padding: 30px;
 }
 .chosen-characters {
@@ -101,20 +110,42 @@
 	justify-content: center;
 	align-content: center;
 	align-items: center;
+	color: white;
 }
 
-.character-card {
+.character-card, .success {
 	width: calc(33.33% - 20px);
 	margin: 10px;
-	border: 1px solid black;
-	min-height: 30vh;
+	min-height: 50vh;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .guessed-character {
 	text-align: center;
+	p {
+		margin: 0;
+	}
 	img {
 		max-width: 100%;
-		padding: 0 20px;
+		padding: 20px;
 	}
+}
+
+.guess-container {
+	display: flex;
+	flex-direction: row;
+	padding-top: 20px;
+}
+
+.guess {
+	max-width: 75%;
+	padding-bottom: 10px;
+}
+
+.guess-submit {
+	max-width: 25%;
 }
 
 .winner, .loser {
@@ -134,8 +165,52 @@
 
 .winner {
 	background: $marvel-red;
+	width: 95%;
+}
+
+.leader-board {
+	padding: 20px 0;
+	h3 {
+		margin: 0;
+		padding-bottom: 10px;
+	}
+}
+
+.winner-data {
+	display: flex;
+	justify-content: space-around;
 }
 
 .loser {
 	background: $marvel-blue;
+	width: 95%;
+	a {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
+
+.loser-missed {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 20px;
+	h3 {
+		width: 100%;
+		text-align: center
+	}
+	div {
+		max-width: calc(33.33% - 10px);
+		border: 5px solid #ddddd9;
+		margin: 5px;
+		img {
+			max-width: 100%;
+			padding: 15px;
+		}
+		p {
+			text-align: center;
+		}
+	}
+}
+

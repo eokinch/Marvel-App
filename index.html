@@ -38,9 +38,11 @@
 				<div class="comic-background image-1"></div>
 			</div>
 			<div class="wrapper game-play-contnet">
-				<h1>So You Think You're A Marvel Fan?</h1>
-				<h2>Who Are These 3 Characters</h2>
-				<p class="guess-count">You have <span></span> guesses left.</p>
+				<div class="game-play_header">
+					<h1>So You Think <span>You're A Marvel Fan?</span></h1>
+					<h2>Who Are These 3 Characters</h2>
+					<p class="guess-count">You have <span></span> guesses left.</p>
+				</div>
 				<div class="chosen-characters">
 					
 				</div>
@@ -49,20 +51,20 @@
 		<section class="winner hide-until-won">
 			<h2>You Win</h2>
 			<p>you did it with <span></span> guesses left</p>
-			<div class="leaderBoard">
-				<h3>Here are the top winners:</h3>
+			<div class="leader-board">
+				<h3>Here are the top 6 winners:</h3>
 			</div>
 			<a href="index.html">Click Here To PLay Again</a>
 		</section>
 		<section class="loser hide-until-lost">
 			<h2>You Lost</h2>
-			<div class="leaderBoard">
-				<h3>Here are some people who didn't:</h3>
-
+			<div class="loser-missed">
+				<h3>Here are the characters you missed:</h3>
 			</div>
 			<a href="index.html">Click Here To try Again</a>
 		</section>
 	</main>
+	<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="public/scripts/main.js"></script>

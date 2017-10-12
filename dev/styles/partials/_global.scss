@@ -1,5 +1,5 @@
 .wrapper {
-	max-width: 85%;
+	max-width: 90%;
 	margin: 0 auto;
 }
 
@@ -22,6 +22,28 @@ h1, h2 {
     display: none;
 }
 
-.welcome-content h1, .welcome-content_instructions, .winner, .loser {
+.welcome-content h1, .welcome-content_instructions, .winner, .loser, .character-card, .game-play_header, .success {
     border: 5px solid #ddddd9;
 } 
+
+input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid $marvel-red;
+    color: white;
+    &::placeholder {
+        text-transform: uppercase;
+        color: white;
+    }
+}
+button {
+    border: none;
+    background: none;
+    color: $marvel-red;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover {
+        color: white;
+        text-shadow: 3px 0px 4px $marvel-red;
+    }
+}

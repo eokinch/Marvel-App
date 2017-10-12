@@ -1,3 +1,14 @@
+// Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBjDTtmeEuLOi38wxGz70RU1WVaU5PQ2bc",
+    authDomain: "marvel-winners.firebaseapp.com",
+    databaseURL: "https://marvel-winners.firebaseio.com",
+    projectId: "marvel-winners",
+    storageBucket: "",
+    messagingSenderId: "278216602516"
+  };
+  firebase.initializeApp(config);
+
 const app = {};
 // character facts database
 app.characters = [
@@ -17,7 +28,7 @@ app.characters = [
 	},
 	{
 		id: 1009220,
-		name: 'Captian America',
+		name: 'Captain America',
 		facts: [
 			[`I Love Stars and Stripes`],
 			[`My Best Friend is: Bucky Barnes`],
@@ -241,7 +252,7 @@ app.characters = [
 		id: 1009707,
 		name: 'Wasp',
 		facts: [
-			[`I used to by a Fashion Designer and TV host`],
+			[`I used to be a Fashion Designer and TV host`],
 			[`I was married to Hank Pym`],
 			[`Superpowers: Flight and Size Reduction`],
 			[`My Initals are: JvD`],
@@ -266,7 +277,6 @@ app.characters = [
 	{
 		id: 1009189,
 		name: 'Black Widow',
-		name: 'Captain Marvel',
 		facts: [
 			[`I was married to a Soviet Spy`],
 			[`I was born in 1928`],
@@ -386,7 +396,7 @@ app.characters = [
 		name: 'Nick Fury',
 		facts: [
 			[`I fought in World War 2 with Captain America and my Howling Commandos`],
-			[`I am male`],
+			[`I lost my eye in a grenade accident`],
 			[`Superpowers: ages very slowly`],
 			[`My Initals are: NF`],
 			[`First Appearance: Sgt. Fury and His Howling Commandos #1 (1963)`],
@@ -399,7 +409,7 @@ app.characters = [
 		name: 'Winter Soldier',
 		facts: [
 			[`I am often kept in cryogenic stasis `],
-			[`I once has a thing with Black Widow`],
+			[`I once had a thing with Black Widow`],
 			[`Superpowers: superhuman strength, speed, reflexes, healing, stamina, agility and semi-immortality`],
 			[`My Initals are: JBB`],
 			[`First Appearance: Captain America #1 (2004)`],
@@ -586,7 +596,7 @@ app.characters = [
 			[`First Appearance: Ms Marvel #16 (1978)`],
 			[`Group Affiliations: x-men`]
 		],
-		first: 10294,
+		first: 56131,
 	},
 	{
 		id: 1010763,
@@ -614,7 +624,7 @@ app.startGame = () => {
 		e.preventDefault();
 		const playerName = $('.player-name').val();
 		if(playerName === ''){
-			alert('Please enter your name to play')
+			$('.player-name').attr('placeholder', 'Please enter your name')
 		} else {
 			app.username = playerName;
 			app.getRandom();
@@ -688,8 +698,9 @@ app.parseData = () => {
 		});
 		const guess = $(`<input type="text" name="guess" class="guess" data-number=${number} placeholder="Your Guess" required>`).addClass(`guess-${number}`);
 		const guessLabel = $('<label for="guess" class="SRT">').text('Your Guess Here');
-		const guessSubmit = $(`<button class="guess-submit" data-number="${number}">`).addClass(`guess-submit-${number}`).text('Guess')
-		character.append(facts, guess, guessLabel, guessSubmit);
+		const guessSubmit = $(`<button class="guess-submit" data-number="${number}" data-id="${item.id}">`).addClass(`guess-submit-${number}`).text('Guess');
+		const guessDiv = $('<div class="guess-container">').append(guess, guessLabel, guessSubmit);
+		character.append(facts, guessDiv);
 		$('.chosen-characters').append(character);
 	})
 	app.handleGuess();
@@ -698,10 +709,8 @@ app.parseData = () => {
 
 app.handleGuess = function() {
 	$('.guess-submit').on('click', function(e) {
-		app.guessCount = app.guessCount - 1;
-		$('.guess-count span').text(app.guessCount);
 		const buttonNumber = $(this).data('number');
-		const characterCardId = $(this).parent().data('id');
+		const characterCardId = $(this).data('id');
 		const findById = _.find(app.characters, (x) => {
 			const id = x.id
 			if (id === characterCardId) {
@@ -710,13 +719,20 @@ app.handleGuess = function() {
 		})
 		const characterName = findById.name.toLowerCase();
 		const userGuess = $(`.guess-${buttonNumber}`).val().toLowerCase();
-		if(characterName === userGuess){
-			app.correctAnswer(characterCardId);
+		if(userGuess === "") {
+			$(`.guess-${buttonNumber}`).attr('placeholder', 'Guess Required');
 		} else {
-			$(`.guess-${buttonNumber}`).val("");
-			$(`.guess-${buttonNumber}`).attr('placeholder', 'Try Again...');
-			app.checkCount();
+			app.guessCount = app.guessCount - 1;
+			$('.guess-count span').text(app.guessCount);
+			if(characterName === userGuess){
+				app.correctAnswer(findById.id);
+			} else {
+				$(`.guess-${buttonNumber}`).val("");
+				$(`.guess-${buttonNumber}`).attr('placeholder', 'Try Again...');
+				app.checkCount();
+			}
 		}
+		
 	})
 }
 app.correctAnswer = (id) => {
@@ -731,21 +747,79 @@ app.correctAnswer = (id) => {
 	const characterName = $('<p>').text(findCharacter.name);
 	const characterPhoto = $('<img>').attr('src', `${findCharacter.image}.jpg`);
 	const characterDiv = $('<div class="guessed-character">').append(successfulGuess, characterPhoto, characterName);
-	currentCard.append(characterDiv).addClass('success');
+	currentCard.append(characterDiv).addClass('success').removeClass('character-card');
 	app.checkCorrect();
 }
 
 app.checkCorrect = () => {
 	const successfulCards = $('.chosen-characters').find(`.success`)
 	if(successfulCards.length === 3){
+		const dbRef = firebase.database().ref(`/winners`);
 		$('.winner').removeClass('hide-until-won');
+		$('.winner p span').text(app.guessCount);
+		const winnerScore = Math.floor((app.guessCount / 6) * 100);
+		const winnerData = {
+			name: app.username,
+			score: winnerScore
+		}
+		dbRef.push(winnerData);
+		const winners = [];
+		dbRef.on('value', (snapshot) => {
+			const allWinners = snapshot.val();
+			for(let key in allWinners){
+				const winnerData = allWinners[key]
+				const winner = {
+					name: winnerData.name,
+					score: winnerData.score,
+				}
+				winners.push(winner)
+			}
+			const winnersSort1= _.sortBy(winners, 'score');
+			const winnersSorted = winnersSort1.reverse();
+			if (winnersSorted.length >= 6) {
+				const first6 = _.first(winnersSorted, [6])
+				first6.forEach((x)=> {
+					const name = $('<p>').addClass('name').text(x.name);
+					const score = $('<p>').addClass('score').text(x.score);
+					const winner = $('<div>').addClass('winner-data').append(name, score)
+					$('.leader-board').append(winner)
+				})
+			} else {
+				winnersSorted.forEach((x)=> {
+				const name = $('<p>').addClass('name').text(x.name);
+				const score = $('<p>').addClass('score').text(x.score);
+				const winner = $('<div>').addClass('winner-data').append(name, score)
+				$('.leader-board').append(winner)
+			})
+			}
+			
+		})
+		
 	}
-
 }
 
 app.checkCount = () => {
 	if(app.guessCount === 0) {
 		$('.loser').removeClass('hide-until-lost');
+		const ids = []
+		
+		const losingCardIds = $(`.character-card`).map(function() {
+			const id = $(this).data('id');
+			ids.push(id)
+		});
+		
+		ids.forEach((id) => {
+			const findById = _.find(app.characters, (x) => {
+				const characterId = x.id
+				if (id === characterId) {
+					return x
+				}
+			})
+			const image = $('<img>').attr('src', `${findById.image}.jpg`);
+			const name = $('<p>').text(findById.name)
+			const unguessedDiv = $('<div>').append(image, name);
+			$('.loser-missed').append(unguessedDiv);
+		})
 	}
 }
 

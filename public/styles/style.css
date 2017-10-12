@@ -132,7 +132,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 .wrapper {
-  max-width: 85%;
+  max-width: 90%;
   margin: 0 auto; }
 
 .SRT {
@@ -152,8 +152,33 @@ h1, h2 {
 .hide-on-load, .hide-until-won, .hide-until-lost {
   display: none; }
 
-.welcome-content h1, .welcome-content_instructions, .winner, .loser {
+.welcome-content h1, .welcome-content_instructions, .winner, .loser, .character-card, .game-play_header, .success {
   border: 5px solid #ddddd9; }
+
+input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #f0141e;
+  color: white; }
+  input::-webkit-input-placeholder {
+    text-transform: uppercase;
+    color: white; }
+  input:-ms-input-placeholder {
+    text-transform: uppercase;
+    color: white; }
+  input::placeholder {
+    text-transform: uppercase;
+    color: white; }
+
+button {
+  border: none;
+  background: none;
+  color: #f0141e;
+  text-transform: uppercase;
+  font-weight: bold; }
+  button:hover {
+    color: white;
+    text-shadow: 3px 0px 4px #f0141e; }
 
 .welcome {
   height: 100vh;
@@ -190,32 +215,21 @@ h1, h2 {
   .welcome-content_instructions ul li span {
     display: block; }
   .welcome-content_instructions input {
-    background: none;
-    border: none;
-    border-bottom: 2px solid #f0141e;
     width: 60%;
-    padding: 10px 20px 10px 10px;
     color: white;
+    padding: 10px 20px 10px 10px;
     text-transform: uppercase; }
     .welcome-content_instructions input::-webkit-input-placeholder {
-      text-transform: uppercase;
-      color: white; }
-    .welcome-content_instructions input:-ms-input-placeholder {
-      text-transform: uppercase;
-      color: white; }
-    .welcome-content_instructions input::placeholder {
-      text-transform: uppercase;
-      color: white; }
-  .welcome-content_instructions button {
-    border: none;
-    background: none;
-    color: #f0141e;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    font-weight: bold; }
-    .welcome-content_instructions button:hover {
       color: white;
-      text-shadow: 3px 0px 4px #f0141e; }
+      text-transform: uppercase; }
+    .welcome-content_instructions input:-ms-input-placeholder {
+      color: white;
+      text-transform: uppercase; }
+    .welcome-content_instructions input::placeholder {
+      color: white;
+      text-transform: uppercase; }
+  .welcome-content_instructions button {
+    padding: 10px 15px; }
 
 .game-play {
   position: relative; }
@@ -237,6 +251,23 @@ h1, h2 {
   height: 50vh;
   background-size: cover; }
 
+.game-play_header {
+  margin: 10px;
+  padding: 20px;
+  color: white;
+  background: #f0141e;
+  text-shadow: 3px 0px 4px #000; }
+  .game-play_header h1 {
+    margin-bottom: 10px; }
+    .game-play_header h1 span {
+      display: block; }
+  .game-play_header h2 {
+    margin-bottom: 5px; }
+  .game-play_header p {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold; }
+
 .game-play-contnet {
   position: absolute;
   width: 100%;
@@ -244,8 +275,7 @@ h1, h2 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8)));
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  background: rgba(0, 0, 0, 0.8);
   padding: 30px; }
 
 .chosen-characters {
@@ -261,19 +291,49 @@ h1, h2 {
       align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  color: white; }
 
-.character-card {
+.character-card, .success {
   width: calc(33.33% - 20px);
   margin: 10px;
-  border: 1px solid black;
-  min-height: 30vh; }
+  min-height: 50vh;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .guessed-character {
   text-align: center; }
+  .guessed-character p {
+    margin: 0; }
   .guessed-character img {
     max-width: 100%;
-    padding: 0 20px; }
+    padding: 20px; }
+
+.guess-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 20px; }
+
+.guess {
+  max-width: 75%;
+  padding-bottom: 10px; }
+
+.guess-submit {
+  max-width: 25%; }
 
 .winner, .loser {
   position: absolute;
@@ -290,7 +350,50 @@ h1, h2 {
     text-decoration: none; }
 
 .winner {
-  background: #f0141e; }
+  background: #f0141e;
+  width: 95%; }
+
+.leader-board {
+  padding: 20px 0; }
+  .leader-board h3 {
+    margin: 0;
+    padding-bottom: 10px; }
+
+.winner-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .loser {
-  background: #326897; }
+  background: #326897;
+  width: 95%; }
+  .loser a {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+.loser-missed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px; }
+  .loser-missed h3 {
+    width: 100%;
+    text-align: center; }
+  .loser-missed div {
+    max-width: calc(33.33% - 10px);
+    border: 5px solid #ddddd9;
+    margin: 5px; }
+    .loser-missed div img {
+      max-width: 100%;
+      padding: 15px; }
+    .loser-missed div p {
+      text-align: center; }
