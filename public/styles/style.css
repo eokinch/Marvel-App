@@ -132,7 +132,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 .wrapper {
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto; }
 
 .SRT {
@@ -183,8 +183,7 @@ button {
 .welcome {
   height: 100vh;
   background: url(../../assets/on-load-bg.jpg);
-  background-size: cover;
-  background-position-y: -30px;
+  background-size: 120%;
   position: relative; }
 
 .welcome-content {
@@ -205,7 +204,7 @@ button {
   -webkit-box-shadow: inset 0 0 30px #000;
   box-shadow: inset 0 0 30px #000;
   text-shadow: 3px 0px 4px #000;
-  font-size: 50px; }
+  font-size: 3.1rem; }
   .welcome-content h1 span {
     display: block; }
 
@@ -252,11 +251,13 @@ button {
   background-size: cover; }
 
 .game-play_header {
-  margin: 10px;
+  margin: 0 5px 20px 5px;
   padding: 20px;
   color: white;
   background: #f0141e;
-  text-shadow: 3px 0px 4px #000; }
+  text-shadow: 3px 0px 4px #000;
+  -webkit-box-shadow: inset 0 0 30px #000;
+  box-shadow: inset 0 0 30px #000; }
   .game-play_header h1 {
     margin-bottom: 10px; }
     .game-play_header h1 span {
@@ -295,8 +296,8 @@ button {
   color: white; }
 
 .character-card, .success {
-  width: calc(33.33% - 20px);
-  margin: 10px;
+  width: calc(33.33% - 10px);
+  margin-right: 10px;
   min-height: 50vh;
   padding: 20px;
   display: -webkit-box;
@@ -308,7 +309,11 @@ button {
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  position: relative; }
+
+.character-card:nth-of-type(3), .success:nth-of-type(3) {
+  margin-right: 0; }
 
 .guessed-character {
   text-align: center; }
@@ -322,6 +327,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -329,11 +336,15 @@ button {
   padding-top: 20px; }
 
 .guess {
-  max-width: 75%;
+  max-width: 100%;
   padding-bottom: 10px; }
 
 .guess-submit {
-  max-width: 25%; }
+  padding: 5px;
+  margin: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
 
 .winner, .loser {
   position: absolute;
@@ -397,3 +408,34 @@ button {
       padding: 15px; }
     .loser-missed div p {
       text-align: center; }
+
+@media (max-width: 980px) {
+  .welcome {
+    background-size: 135%;
+    background-position-x: 80%; }
+  .welcome-content h1 {
+    font-size: 2.9rem; } }
+
+@media (max-width: 880px) {
+  .game-play_header {
+    background: purple; } }
+
+@media (max-width: 768px) {
+  .welcome {
+    background-size: cover; }
+  .welcome-content h1 {
+    font-size: 2.5rem;
+    padding: 30px 15px; }
+  .welcome-content_instructions {
+    padding: 30px;
+    font-size: 0.95rem; } }
+
+@media (max-width: 480px) {
+  .welcome {
+    background-size: cover; }
+  .welcome-content h1 {
+    font-size: 1.8rem;
+    padding: 30px 15px; }
+  .welcome-content_instructions {
+    padding: 30px;
+    font-size: 0.8rem; } }
