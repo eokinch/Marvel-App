@@ -252,6 +252,20 @@ app.chosenCharacters = [];
 app.username = '';
 app.guessCount = 9;
 
+app.disableScroll = function () {
+	$('html, body').css({
+		overflow: 'hidden',
+		height: '100%'
+	});
+};
+
+app.allowScroll = function () {
+	$('html, body').css({
+		overflow: 'auto',
+		height: 'auto'
+	});
+};
+
 app.startGame = function () {
 	$('.start-game-submit').on('click', function (e) {
 		e.preventDefault();
@@ -259,11 +273,14 @@ app.startGame = function () {
 		if (playerName === '') {
 			$('.player-name').attr('placeholder', 'Please enter your name');
 		} else {
+			app.allowScroll();
 			app.username = playerName;
-			app.getRandom();
 			$('.hide-on-submit').css('display', 'none');
 			$('.game-play').removeClass('hide-on-load');
 			$('.guess-count span').text(app.guessCount);
+			$('html, body').animate({
+				scrollTop: $('#game-play').offset().top
+			}, 2000);
 		}
 	});
 };
@@ -290,6 +307,7 @@ app.getCharacterData = function () {
 	});
 	app.getFirstAppearanceData();
 };
+
 app.getFirstAppearanceData = function () {
 	var chosen = [];
 	app.chosenCharacters.forEach(function (item) {
@@ -452,7 +470,9 @@ app.checkCount = function () {
 };
 
 app.init = function () {
+	app.getRandom();
 	app.startGame();
+	app.disableScroll();
 };
 
 $(function () {

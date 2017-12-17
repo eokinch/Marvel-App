@@ -619,6 +619,20 @@ app.chosenCharacters = [];
 app.username = '';
 app.guessCount = 9;
 
+app.disableScroll = () => {
+	$('html, body').css({
+	    overflow: 'hidden',
+	    height: '100%'
+	});
+}
+
+app.allowScroll = () => {
+	$('html, body').css({
+	    overflow: 'auto',
+	    height: 'auto'
+	});
+}
+
 app.startGame = () => {
 	$('.start-game-submit').on('click', (e) => {
 		e.preventDefault();
@@ -626,13 +640,16 @@ app.startGame = () => {
 		if(playerName === ''){
 			$('.player-name').attr('placeholder', 'Please enter your name')
 		} else {
+			app.allowScroll();
 			app.username = playerName;
-			app.getRandom();
 			$('.hide-on-submit').css('display', 'none');
 			$('.game-play').removeClass('hide-on-load');
 			$('.guess-count span').text(app.guessCount);
+			$('html, body').animate({
+				scrollTop: $('#game-play').offset().top
+			}, 2000);
 		}
-	})
+	});
 }
 
 app.getRandom = () => {
@@ -657,6 +674,7 @@ app.getCharacterData = () => {
 	});
 	app.getFirstAppearanceData();
 }
+
 app.getFirstAppearanceData = () => {
 	const chosen = []
 	app.chosenCharacters.forEach((item) => {
@@ -824,7 +842,9 @@ app.checkCount = () => {
 }
 
 app.init = () => {
+	app.getRandom();
 	app.startGame();
+	app.disableScroll();
 }
 
 $(() => {
