@@ -241,34 +241,60 @@
 @media (max-width: 768px) {
 	.welcome {
 		background-size: cover;
+		height: 110vh;
+		.welcome-content {
+			top: 42%;
+		}
 	}
 	.welcome-content h1 {
 		font-size: 2.5rem;
-		padding: 30px 15px;
+		padding:40px 20px;
 	}
 	.welcome-content_instructions {
 		padding: 30px;
 		font-size: 0.95rem;
 	}
 
-	.game-play-header {
-		margin: 0px 2.5px 20px 2.5px;
+	.game-play_header {
+		margin: 0 0 10px 0;
 	}
 
 	.game-play-contnet {
 		padding: 10px;
+		p:first-child {
+			margin-top: 0;
+		}
+		.guess-container {
+			padding-top: 5px;
+		}
 	}
 
 	.character-card {
 		width: 100%;
 		margin-right: 0;
+		margin: 0 0 10px 0;
 		min-height: auto;
+		padding: 10px;
+	}
+
+	.success {
+		width: calc(50% - 10px;;
+		padding: 10px;
+		min-height: auto;
+		margin-bottom: 10px;
+		p {
+			margin: 0;
+		}
+		img {
+			max-width: 150px;
+		}
 	}
 }
 
 @media (max-width: 480px) {
 	.welcome {
 		background-size: cover;
+		height: 120vh;
 	}
 	.welcome-content h1 {
 		font-size: 1.8rem;
@@ -279,5 +305,67 @@
 		font-size: 0.8rem;
 	}
 
+	.game-play_header {
+		h1 {
+			font-size: 1.5rem;
+		}
+		h2 {
+			font-size: 1.2rem;
+		}
+		.guess-count {
+			font-size: 1rem;
+		}
+	}
+
+	.success {
+		width: calc(50% - 10px;;
+		padding: 10px;
+		min-height: auto;
+		margin-bottom: 10px;
+		p {
+			margin: 0;
+		}
+		img {
+			max-width: 100px;
+			padding: 0;
+		}
+	}
+
+}
+
+@media (max-width: 350px) {
+	.welcome .welcome-content {
+		top: 38%;
+	}
+
+	.welcome-content{
+		h1 {
+			padding: 10px 5px;
+			font-size: 1.5rem;
+			margin-bottom: 5px;
+		}
+	}
+	.welcome-content_instructions {
+		padding: 5px 10px;
+		p {
+			margin: 5px 0;
+		}
+	}
+
+	.welcome-content_instructions input {
+		padding: 5px 10px 5px 5px;
+	}
+
+	.welcome-content_instructions button {
+		padding: 5px 7.5px;
+	}
+
+	.comic-background {
+		height: 50vh;
+	}
+
+	.game-play_header {
+		padding: 5px 10px;
+	}
 }
 
